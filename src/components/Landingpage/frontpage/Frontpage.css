@@ -1,0 +1,292 @@
+
+.big-text-module{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.small-text-module{
+    font-size: 0.7rem;
+    width: 30%;
+    text-align: center;
+    margin-left: 5%;
+}
+
+.frontpage-title{
+    margin-left: 10%;
+    margin-top: 6%;
+}
+
+
+.getstarted-btn{
+    border-radius: 20%;
+    margin-left: 23%;
+}
+
+#start-sign-btn{
+    background-color: #7B61FF;
+    color: white;
+}
+
+
+.img-items{
+    width: 30%;
+}
+
+.text-modules{
+    margin-top: 12%;
+}
+
+.image-container{
+    background-image: url('./FrontpageAssests//first.jpg');
+    width: 35%;
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 55%;
+    border-radius: 20%;
+    margin-top: -18%;
+}
+
+.reason-modules{
+    margin-top: 8%;
+}
+
+
+
+.reason-title{
+    text-align: center;
+}
+
+
+
+.card-img-top{
+    width: 100%;
+    height: 100%;
+}
+
+.card-container{
+    display: flex;
+    margin-left: -1%;
+    margin-top: 5%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+
+.card-reason{
+    z-index: 1;
+}
+
+.frame-img{
+    width: 40%;
+    margin-top: 10%;
+    margin-left: 8%;
+}
+
+.description-items{
+    margin-left: 50%;
+    margin-top: -17%;
+}
+
+.descp-text{
+    text-align: center;
+}
+
+.desp-text{
+    font-size: 80%;
+    text-align: center;
+    margin-top: 2%;
+    width: 80%;
+    margin-left: 9%;
+}
+
+#blog-btn{
+    background-color: #7B61FF;
+    border-color: #7B61FF;
+    margin-top: 2%;
+    margin-left: 45%;
+}
+
+#list-logo{
+    width: 50%;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+#text-card{
+    margin-top: 2%;
+    color: white;
+
+}
+
+.box-module{
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    margin-left: 55%;
+    justify-content: space-around;
+}
+
+.box-module > div{
+    margin-top: 5%;
+}
+
+.custom-img {
+    width: 20%;
+    margin-left: 39%;
+    margin-top: 5%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  #customize-text{
+    font-size: 90%;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+
+  .guide-module{
+    margin-top: -15%;
+    margin-left: 5%;
+  }
+
+  .custom-text{
+     font-size: 70%;
+     width: 40%;
+     text-align: center;
+     margin-left: 1%;
+  }
+
+  .footer-module{
+    margin-top: 15%;
+  }
+
+  .footer {
+    width: 50vw; /* Set width to half of the viewport width */
+    background-color: #7B61FF;
+    margin-top: 10%;
+    padding: 1%;
+    height: 50vh; /* Set height to 100% of the viewport height */
+  }
+  
+
+  .footer-img{
+width: 48.7vw;
+height: 50vh;
+margin-top: -22.5%;
+margin-left: 50.6%;
+object-fit: cover;
+  }
+.footer-logo{
+    width: 6%;
+    margin-left: 30%;
+    margin-top: 3%;
+}
+.footer-items{
+    display: flex;
+}
+
+.footer-title{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 4%;
+    margin-left: 1%;
+}
+.footer-para{
+    margin-top: -15.5%;
+    margin-left: 9%;
+    color: white;
+    font-size: 0.9rem;
+    width: 30%;
+    text-align: center;;
+}
+
+
+.btn-section1{
+    margin-left: 20%;
+    margin-top: 1%;
+    position: absolute;
+}
+
+
+.btn-section1 > .btn{
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+
+.btn-section1 > #sign1{
+    background-color: #7B61FF;
+    color: white;
+    border-color: white;
+}
+
+
+
+@media only screen and (max-width: 500px){
+    .big-text-module{
+        font-size: 1rem;
+        text-align: center;
+        margin-left: -5%;
+        width: 90%;
+    }
+
+    .small-text-module{
+        font-size: 0.6rem;
+        width: 90%;
+        margin-left: -4%;
+    }
+    .image-container{
+        margin-top:10%;
+        margin-left: 17%;
+        width: 60%;
+        height: 20vh;
+    }
+    .getstarted-btn{
+        margin-left: 30%;
+    }
+
+    .card{
+        margin-top: 5%;
+    }
+
+    .frame-img{
+        margin-left: 30%;
+    }
+    .descp-text{
+        margin-top: 50%;
+        margin-left: -95%;
+    }
+    .desp-text {
+        margin-left: -58%;
+        width: 120%;
+    }
+
+    #blog-btn{
+        margin-left: -10%;
+    }
+    .box-module{
+        margin-left: 34%;
+    }
+
+    .guide-module{
+        margin-top: 15%;
+    }
+    .guide-module > h5{
+        text-align: center;
+    }
+    .custom-text{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .footer-img{
+        visibility: hidden;
+    }
+    .footer-module{
+        width: 100%;
+    }
+}

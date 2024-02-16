@@ -1,0 +1,51 @@
+
+.dash-navigation {
+    height: 100%;
+    width: 16%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #7B61FF;
+    overflow-x: hidden;
+    padding-top: 2%;
+  }
+  
+  .dash-items>  .nav-text{
+    text-decoration: none;
+    font-size: 89%;
+    /* color: #341C69; */
+    color: white;
+    display: block;
+    transition: 0.3s;
+    margin-top: 20%;
+    text-align: left;
+  }
+  
+
+  .dash-module-title{
+    color: white;
+    margin-top: 3%;
+    margin-left: 25%;
+    font-size: 92%;
+  }
+
+
+  /* .nav-text:hover{
+    background-color: white;
+    color: black;
+  } */
+
+
+.dashImage-container{
+    width: 12%;
+    margin-left: 40%;
+    margin-top: -4%;
+}
+
+.dash-items {
+    margin-left: 20%;
+    margin-top: 10%;
+}
+  
+

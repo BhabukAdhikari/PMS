@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&family=Poppins:wght@400;500&family=Roboto:wght@300;400&display=swap');
+
+.parent-login {
+    background-color: #EEEEEE;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: white;
+    height: 70vh;
+    width: 70%;
+    position: relative;
+    top: 14%;
+    left: 15%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+}
+
+.img-login {
+    background-image: url('../assets/images/login.jpeg');
+    height: 70vh;
+    background-repeat: no-repeat;
+    width: 45%;
+}
+
+.img-login h1 {
+    color: white;
+    text-align: center;
+    padding-top: 50%;
+    font-size: 40px;
+    font-weight: bolder
+}
+
+@media screen and (max-width: 620px) {
+    .img-login h1 {
+        font-size: 1rem;
+        padding-top: 30vh;
+    }
+}
+
+.login-field {
+    padding-left: 8%;
+    padding-top: 4%;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.login-field p {
+    color: #CDCDCD;
+}
+
+.btn-login {
+    background-color: #824FF1;
+}
+
+.signUp {
+    color: #824FF1;
+    text-decoration: underline;
+}
