@@ -14,7 +14,7 @@ import Navbar from './components/Landingpage/Navbar/Navbar'
 import  Blog from './components/Landingpage/Blog/Blog'
 import Guide from './components/Landingpage/Guide/Guide'
 import Profile from './components/DashBoard/Profile/Profile'
-import Addlist from "./components/DashBoard/Addlist/Addlist";
+import Addlist from "./components/DashBoard/add-list/Addlist";
 import YourList from './components/DashBoard/YourList/YourList'
 import Setting from './components/DashBoard/Setting/Setting'
 
