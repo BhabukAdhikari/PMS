@@ -3,4 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    /* background-color: #e3e7e6; */
+}
+
+
+:root{
+    --main-background-color: #7B61FF;
+    --main-color: #341C69;
 }

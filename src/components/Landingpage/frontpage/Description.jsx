@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import frame from "./FrontpageAssests/Frame5.png";
- 
+import './Css-Desk/Description.css' 
+
 const Description = () => {
   return (
     <div>

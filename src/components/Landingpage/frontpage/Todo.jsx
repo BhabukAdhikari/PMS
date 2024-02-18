@@ -4,6 +4,7 @@ import List from "./icon/Vector.png";
 import Financial from "./icon/Vector (1).png";
 import Oragnize from "./icon/organize.png";
 import Anlyze from "./icon/Group (1).png";
+import './Css-Desk/Todo.css'
 
 
 const Todo = () => {
@@ -16,7 +17,7 @@ const Todo = () => {
           id="#list-logo"
         >
           <img src={List} className="card-img-top custom-img" alt="..." />
-          <div className="card-body">
+          <div className="card-body" id='card-module'>
             <p className="card-text" id="customize-text">
               REMEBER TASK.
             </p>
@@ -28,7 +29,7 @@ const Todo = () => {
           style={{ width: "14rem", backgroundColor: "#7B61FF" }}
         >
           <img src={Anlyze} className="card-img-top custom-img" alt="..." />
-          <div className="card-body">
+          <div className="card-body" id='card-module'>
             <p className="card-text" id="customize-text">
               ANAYLIZE YOUR TASK.
             </p>
@@ -40,7 +41,7 @@ const Todo = () => {
           style={{ width: "14rem", backgroundColor: "#7B61FF" }}
         >
           <img src={Financial} className="card-img-top custom-img" alt="..." />
-          <div className="card-body">
+          <div className="card-body" id='card-module'>
             <p className="card-text" id="customize-text">
               RECORD YOUR FINANCIAL HISTORY.
             </p>
@@ -52,7 +53,7 @@ const Todo = () => {
           style={{ width: "14rem", backgroundColor: "#7B61FF" }}
         >
           <img src={Oragnize} className="card-img-top custom-img" alt="..." />
-          <div className="card-body">
+          <div className="card-body" id='text-section'>
             <p className="card-text" id="customize-text">
               BE ORGANIZE.
             </p>

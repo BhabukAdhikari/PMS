@@ -1,54 +1,157 @@
-import React, { useState } from "react";
+import React from "react";
+import "./Dash-css/DashNav.css";
 import { Link } from "react-router-dom";
-import "./Dash.css"; // CSS file for styling
-import Whitelogo from "../CompnentAssets/white.png";
+import logo from "./Dash-assests/white.png";
+import useDashHook from "./CustomHooks/DashHook";
 
-const Dashnav = () => {
+
+const DashNav = () => {
+  const {toggleButton , hideTopBar , toggleBtn}= useDashHook();
   return (
-    <div className="dash-navigation">
-      <img src={Whitelogo} alt="" className="dashImage-container" />
-      <h5 className="dash-module-title">OrganizeMe</h5>
+    <div>
+      <div className="sidebar" >
+        <div className="container">
+          <a className="navbar-brand" id="navbar-brand" to="#">
+            <img src={logo} alt="Bootstrap" width={27} height={20} className="dash-img" />
+            <strong className="brand-text">OrganizeMe</strong>
+          </a>
+        </div>
+        {hideTopBar && (
+        <div className="toggle-btn">
+          <button type="button" onClick={toggleButton}>
+            Menu
+          </button>
+        </div>
+      )}
 
-      <div className="dash-items">
-        <Link className="nav-text" to="/dashnav">
-          {" "}
+      {toggleBtn && (
+        <div className="container-items">
+          <Link className="active" to="/profile">
+            <i
+              className="fa-solid fa-user"
+              style={{
+                color: "white",
+                marginRight: "10%",
+              }}
+              id="dash-Icon"
+            ></i>
+            Profile
+          </Link>
+          <Link to="/createlist">
+            <i
+              className="fa-solid fa-plus-minus"
+              style={{
+                color: "white",
+                marginRight: "10%",
+              }}
+              id="dash-Icon"
+            ></i>
+            Create-list
+          </Link>
+          <Link to="/yourlist">
+            <i
+              className="fa-solid fa-folder"
+              style={{
+                color: "white",
+                marginRight: "10%",
+              }}
+              id="dash-Icon"
+            ></i>
+            Your-list
+          </Link>
+          <hr className="border" />
+          <Link to="/setting">
+            <i
+              className="fa-solid fa-gear"
+              style={{
+                color: "white",
+                marginRight: "10%",
+              }}
+              id="dash-Icon"
+            ></i>
+            Setting
+          </Link>
+          <Link to="/logout">
+            <i
+              className="fa-solid fa-right-from-bracket"
+              style={{
+                color: "white",
+                marginRight: "10%",
+              }}
+              id="dash-Icon"
+            ></i>
+            Logout
+          </Link>
+        </div>
+      )}
+
+       {
+        !toggleBtn && (
+          <div className="container-items">
+          <Link className="active" to="/profile">
           <i
-            class="fa-solid fa-user"
-            style={{ color: "#ffffff", marginRight: "9%" }}
-          ></i>{" "}
+            className="fa-solid fa-user"
+            style={{
+              color: "white",
+              marginRight: "10%",
+              // backgroundColor: "#e3e7e6"
+            }}
+            id="dash-icon"
+          ></i>
           Profile
         </Link>
-        <Link className="nav-text" to="/addlist">
+        <Link to="/createlist">
           <i
-            class="fa-solid fa-plus"
-            style={{ color: "#ffffff", marginRight: "9%" }}
+            className="fa-solid fa-plus-minus"
+            style={{
+              color: "white",
+              marginRight: "10%",
+              // backgroundColor: "#7B61FF"
+            }}
           ></i>
-          Add List
+          Create-list
         </Link>
-        <Link className="nav-text" to="/yourlist">
-          {" "}
+        <Link to="/yourlist">
           <i
-            class="fa-solid fa-address-book"
-            style={{ color: "#ffffff", marginRight: "9%" }}
+            className="fa-solid fa-folder"
+            style={{
+              color: "white",
+              marginRight: "10%",
+              // backgroundColor: "#7B61FF"
+            }}
           ></i>
-          Your List
+          Your-list
         </Link>
-        <Link
-          className="nav-text"
-          style={{
-            marginTop: "170%",
-          }}
-          to="/setting"
-        >
+        <hr className="border"/>
+        <Link to="/setting">
           <i
-            class="fa-solid fa-gear"
-            style={{ color: "#ffffff", marginRight: "9%" }}
+            className="fa-solid fa-gear"
+            style={{
+              color: "white",
+              marginRight: "10%",
+              // backgroundColor: "#7B61FF"
+            }}
           ></i>
           Setting
         </Link>
+        <Link to="/logout">
+          <i
+            className="fa-solid fa-right-from-bracket"
+            style={{
+              color: "white",
+              marginRight: "10%",
+              // backgroundColor: "#7B61FF"
+            }}
+          ></i>
+          Logout
+        </Link>
+        </div>
+        )
+       }
       </div>
+  
     </div>
   );
 };
 
-export default Dashnav;
+export default DashNav;

@@ -1,0 +1,112 @@
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color:var(--main-background-color);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 85%;
+    transition: 0.3s;
+  }
+   
+  .sidebar a.active {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    font-size: 85%;
+  }
+
+
+ 
+  .sidebar a:hover:not(.active) {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  #navbar-brand{
+    display: flex;
+    font-size: 150%;
+  }
+  .brand-text{
+    color: white;
+    font-size: 70%;
+    padding-top: 3%;
+    padding-left: 3%;
+    /* background-color: var(--main-background-color); */
+  }
+
+  .dash-img{
+    /* background-color: var(--main-background-color); */
+  }
+
+  .border{
+    color: white;
+    background-color: white;
+  }
+
+.container-items{
+    margin-top: 12%;
+    /* background-color: var(--main-background-color); */
+}
+
+.toogle-button{
+  margin-top: -90%;
+}
+
+.container{
+  /* background-color: var(--main-background-color); */
+}
+
+
+
+
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .border{
+        visibility: hidden;
+    }
+    
+    /* .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+     */
+/* 
+   .container-items {
+    display: flex;
+    margin-top: 2%;
+    margin-left: 15%;
+   }
+    */
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+    .container{
+        padding-left: 29%;
+    }
+    .container-items{
+        margin-left: -11%;
+    }
+   .top-bar{
+    visibility: hidden;
+   }
+
+  }

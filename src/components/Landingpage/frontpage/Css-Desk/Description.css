@@ -1,0 +1,29 @@
+.frame-img{
+    width: 40%;
+    margin-top: 10%;
+    margin-left: 8%;
+}
+
+.description-items{
+    margin-left: 50%;
+    margin-top: -17%;
+}
+
+.descp-text{
+    text-align: center;
+}
+
+.desp-text{
+    font-size: 80%;
+    text-align: center;
+    margin-top: 2%;
+    width: 80%;
+    margin-left: 9%;
+}
+
+#blog-btn{
+    background-color: #7B61FF;
+    border-color: #7B61FF;
+    margin-top: 2%;
+    margin-left: 45%;
+}

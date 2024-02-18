@@ -1,9 +1,10 @@
 import React from 'react'
-import Navbar from '../Landingpage/Navbar/Navbar'
+// import Navbar from '../Landingpage/Navbar/Navbar'
+import Dashboard from '../DashBoard/Dashboard'
 
 const Default = ({children}) => {
   return (
-    <div><Navbar />{children}</div>
+    <div><Dashboard />{children}</div>
   )
 }
 

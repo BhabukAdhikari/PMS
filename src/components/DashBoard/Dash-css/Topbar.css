@@ -1,0 +1,27 @@
+#top-bar{
+    width: 85.2%;
+    /* background-color: var(--main-background-color); */
+    /* background-color: hsl(165, 8%, 90%); */
+    margin-left: 14.8%;
+    /* border-bottom:  ; */
+
+}
+#bell-icon{
+    margin-top: -2.6%;
+    margin-left: 85%;
+}
+
+#top-item-container{
+    font-size: 82%;
+    color: var(--main-color);
+    margin-left: 90%;
+ 
+}
+
+#top-img-container{
+    width: 12%;
+    padding-top: 1%;
+    margin-right: 6%;
+}
+
+

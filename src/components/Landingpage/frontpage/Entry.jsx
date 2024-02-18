@@ -1,6 +1,7 @@
 import React from 'react'
-import './Frontpage.css'
+import './Css-Desk/Frontpage.css'
 import { Link } from 'react-router-dom'
+import './Css-Desk/Entry.css'
 
 
 const Entry = () => {

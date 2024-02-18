@@ -1,0 +1,53 @@
+.big-text-module{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.small-text-module{
+    font-size: 0.7rem;
+    width: 30%;
+    text-align: center;
+    margin-left: 5%;
+}
+
+.frontpage-title{
+    margin-left: 10%;
+    margin-top: 6%;
+}
+
+
+.getstarted-btn{
+    border-radius: 20%;
+    margin-left: 23%;
+}
+
+#start-sign-btn{
+    background-color: #7B61FF;
+    color: white;
+}
+
+
+.img-items{
+    width: 30%;
+}
+
+.text-modules{
+    margin-top: 12%;
+}
+
+.image-container{
+    background-image: url('../FrontpageAssests/first.jpg');
+    width: 35%;
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 55%;
+    border-radius: 20%;
+    margin-top: -18%;
+}
+
+.reason-modules{
+    margin-top: 8%;
+}
+
+

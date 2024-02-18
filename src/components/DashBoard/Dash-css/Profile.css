@@ -1,0 +1,148 @@
+#profile-img{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+
+}
+
+#profle-box{
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#profile-box-text{
+    text-align: center;
+}
+
+.task-box{
+    padding: 2%;
+    box-sizing: border-box;
+    /* border-radiu: 5%; */
+    background-color: var(--main-background-color);
+    width: 25%;
+}
+
+#number-display{
+    color: white;
+    padding-left: 18%;
+    font-size: 2rem;
+}
+
+#task-box{
+    background-color: var(--main-background-color);
+}
+
+#profile-text{
+    display: flex;
+}
+
+
+#sub-title{
+    font-size: 100%;
+}
+
+.task-progress-container{
+    display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin-left: 33%;
+   margin-top: -25%;
+}
+
+
+.graph-section{
+    margin-top: 20%;
+}
+
+.chart-container {
+  display: flex;
+}
+
+
+
+.chart {
+  position: relative;
+  margin-left: 20px; /* Add some space between axes */
+}
+
+.x-axis {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1%; /* Add some space between X-axis and chart area */
+}
+
+.chart-area {
+  width: 660px; /* Adjust width of the chart area */
+  height: 300px; /* Adjust height of the chart area */
+  border-left: 2px solid var(--main-background-color);
+  border-bottom: 2px solid var(--main-background-color);
+}
+
+
+.day-label{
+    padding: 2%;
+}
+
+.sunday{
+    width: 5%;
+    height: 90%;
+    padding: 1%;
+    margin-left: -63%;
+    margin-top: 27%;
+    background-color: green;
+}
+
+.monday{
+    width: 5%;
+    height: 90%;
+    padding: 1%;
+    margin-left: -63%;
+    margin-top: 27%;
+    background-color: black;
+}
+
+.tuesday{
+    width: 5%;
+    height: 90%;
+    padding: 1%;
+    margin-left: -63%;
+    margin-top: 27%;
+    background-color: green;
+}
+
+.wednesday{
+    width: 5%;
+    height: 90%;
+    padding: 1%;
+    margin-left: -63%;
+    margin-top: 27%;
+    background-color: green;
+}
+.thursday{
+    width: 5%;
+    height: 90%;
+    padding: 1%;
+    margin-left: -63%;
+    margin-top: 27%;
+    background-color: green;
+}
+
+.friday{
+    width: 5%;
+    height: 90%;
+    padding: 1%;
+    margin-left: -63%;
+    margin-top: 27%;
+    background-color: green;
+}
+
+.saturday{
+    width: 5%;
+    height: 90%;
+    padding: 1%;
+    margin-left: -63%;
+    margin-top: 27%;
+    background-color: green;
+}
