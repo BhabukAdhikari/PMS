@@ -1,9 +1,30 @@
 import React, { useState } from "react";
 import User from "../../assets/images/footerImg.jpg";
 import "./Dash-css/Profile.css";
+import { Chart } from "react-google-charts";
+import Calendar from "./Calender";
 
 const Profile = () => {
-  const [TotalTask, Task] = useState(10);
+  const [TotalTask, setTotalTask] = useState(10);
+  const data = [
+    ['week', 'task'],
+    ['Sunday', TotalTask],
+    ['Monday', 55],
+    ['Tuesday', 100],
+    ['Wednesday', 44],
+    ['Thursday', 24],
+    ['Friday', 15] ,
+    ['Saturday', 15]
+  ];
+
+  const options = {
+    title: 'Your Weekly Analysis',
+    chartArea: { width: '80%', height: '80%'  },
+    hAxis: { title: 'week', minValue: 0 },
+    vAxis: { title: 'task bar' },
+    colors: ["7B61FF"]
+  };
+
   return (
     <div
       style={{
@@ -98,30 +119,22 @@ const Profile = () => {
         </div>
       </div>
 
-      <div className="graph-section">
-        <div className="chart-container">
-          <div className="chart">
-            <div className="chart-area"></div>
+    <div style={{ width: '100%', maxWidth: 600, height: 500  }} className="task-graph">
+      <Chart
+        chartType="BarChart"
+        data={data}
+        options={options}
+        width={'100%'}
+        height={'100%'}
+      />
+    </div>
+ 
+<div className="calender-section">
+  <Calendar/>
+</div>
 
-            <div className="x-axis">
-              <div className="day-label">Sunday</div>
-              <div className="day-label">Monday</div>
-              <div className="day-label">Tuesday</div>
-              <div className="day-label">Wednesday</div>
-              <div className="day-label">Thursday</div>
-              <div className="day-label">Friday</div>
-              <div className="day-label">Saturday</div>
-            </div>
-          </div>
-          <div className="sunday"></div>
-          <div className="monday"></div>
-          <div className="tuesday"></div>
-          <div className="wednesday"></div>
-          <div className="thursday"></div>
-          <div className="friday"></div>
-          <div className="saturday"></div>
-        </div>
-      </div>
+
+    
     </div>
   );
 };

@@ -85,64 +85,38 @@
     padding: 2%;
 }
 
-.sunday{
-    width: 5%;
-    height: 90%;
-    padding: 1%;
-    margin-left: -63%;
-    margin-top: 27%;
-    background-color: green;
+
+
+.chart-bar{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.monday{
-    width: 5%;
-    height: 90%;
-    padding: 1%;
-    margin-left: -63%;
-    margin-top: 27%;
-    background-color: black;
-}
+.chart-region {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Align bars to the bottom */
+    width: 500px; /* Adjust width of the chart area */
+/* Add border for visualization */
+margin-top:  20%;
+margin-left:  3%;
+position: absolute;
+  }
 
-.tuesday{
-    width: 5%;
-    height: 90%;
-    padding: 1%;
-    margin-left: -63%;
-    margin-top: 27%;
-    background-color: green;
-}
+  .sunday { height: 10px; }
+.monday { height: 8px; }
+.tuesday { height: 6px; }
+.wednesday { height: 7px; }
+.thursday { height: 10px; }
+.friday { height: 5px; }
+.saturday { height: 11px; }.bar {
+    width: 50px; 
+    background-color: var(--main-background-color); 
+  }
 
-.wednesday{
-    width: 5%;
-    height: 90%;
-    padding: 1%;
-    margin-left: -63%;
-    margin-top: 27%;
-    background-color: green;
-}
-.thursday{
-    width: 5%;
-    height: 90%;
-    padding: 1%;
-    margin-left: -63%;
-    margin-top: 27%;
-    background-color: green;
-}
 
-.friday{
-    width: 5%;
-    height: 90%;
-    padding: 1%;
-    margin-left: -63%;
-    margin-top: 27%;
-    background-color: green;
-}
-
-.saturday{
-    width: 5%;
-    height: 90%;
-    padding: 1%;
-    margin-left: -63%;
-    margin-top: 27%;
-    background-color: green;
-}
+  .task-graph{
+    margin-top: 20%;
+  }
+  
+  
