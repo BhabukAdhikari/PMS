@@ -1,19 +1,33 @@
 import React, { useState } from "react";
 import User from "../../assets/images/footerImg.jpg";
 import "./Dash-css/Profile.css";
+import { Chart } from "react-google-charts";
+import Calendar from "./Calender";
 
 const Profile = () => {
-  const [TotalTask, Task] = useState(10);
+  const [TotalTask, setTotalTask] = useState(10);
+  const data = [
+    ["week", "task"],
+    ["Sunday", TotalTask],
+    ["Monday", 55],
+    ["Tuesday", 100],
+    ["Wednesday", 44],
+    ["Thursday", 24],
+    ["Friday", 15],
+    ["Saturday", 15],
+  ];
+
+  const options = {
+    title: "Your Weekly Analysis",
+    chartArea: { width: "80%", height: "80%", backgroundColor: "e3e7e6" },
+    hAxis: { title: "week", minValue: 0 },
+    vAxis: { title: "task bar" },
+    backgroundColor: "#e3e7e6",
+    colors: ["7B61FF"],
+  };
+
   return (
-    <div
-      style={{
-        backgroundColor: "#e3e7e6",
-        marginTop: "0%",
-        color: "black",
-        padding: "5%",
-        marginLeft: "14.6%",
-      }}
-    >
+    <div className="profile-department">
       <div className="card" style={{ width: "18rem" }} id="profle-box">
         <img src={User} className="card-img-top" alt="..." id="profile-img" />
         <div className="card-body" id="profile-box-text">
@@ -28,99 +42,143 @@ const Profile = () => {
 
       <div className="task-progress-container">
         <div
-          className="card text-white mb-3"
-          style={{ maxWidth: "18rem" }}
-          id="task-box"
+          className="card"
+          id="task-Details"
+          style={{
+            width: "18rem",
+            height: "9rem",
+            borderRadius: "15px",
+            backgroundColor: "#7B61FF",
+            color: "white",
+          }}
         >
-          <div className="card-header">Task Box</div>
-          <div className="card-body" id="profile-text">
-            <i
-              class="fa-solid fa-list-check"
+          <div className="card-body">
+            <h5 className="card-title">{TotalTask}</h5>
+            <p
+              className="card-text"
               style={{
                 color: "white",
-                paddingRight: "5%",
-                paddingTop: "1%",
+                fontWeight: "bold" 
               }}
-            ></i>
-            <h5 className="card-title" id="sub-title">
-              No. of Task
-            </h5>
-            <p className="card-text" id="number-display">
-              {TotalTask}
+            >
+              List Of task
             </p>
+            <a
+              href="#"
+              className="btn"
+              style={{
+                color: "white",
+                border: "2px solid white",
+                width: "30%", 
+                height: "30%" , 
+                fontSize: "90%",
+                paddingBottom: "5%"
+              }}
+              id="view"
+            >
+              View
+            </a>
           </div>
         </div>
+
         <div
-          className="card text-white mb-3"
-          style={{ maxWidth: "18rem" }}
-          id="task-box"
+          className="card"
+          id="task-Details"
+          style={{
+            width: "18rem",
+            height: "9rem",
+            borderRadius: "15px",
+            backgroundColor: "#7B61FF",
+            color: "white",
+          }}
         >
-          <div className="card-header">Task Complete Box</div>
-          <div className="card-body" id="profile-text">
-            <i
-              class="fa-solid fa-list-check"
+          <div className="card-body">
+            <h5 className="card-title">{TotalTask}</h5>
+            <p
+              className="card-text"
               style={{
                 color: "white",
-                paddingRight: "5%",
-                paddingTop: "1%",
+                fontWeight: "bold" 
               }}
-            ></i>
-            <h5 className="card-title" id="sub-title">
-              Complete
-            </h5>
-            <p className="card-text" id="number-display">
-              {TotalTask}
+            >
+              List Of task
             </p>
+            <a
+              href="#"
+              className="btn"
+              style={{
+                color: "white",
+                border: "2px solid white",
+                width: "30%", 
+                height: "30%" , 
+                fontSize: "90%",
+                paddingBottom: "5%"
+              }}
+              id="view"
+            >
+              View
+            </a>
           </div>
         </div>
+
+
         <div
-          className="card text-white mb-3"
-          style={{ maxWidth: "18rem" }}
-          id="task-box"
+          className="card"
+          id="task-Details"
+          style={{
+            width: "18rem",
+            height: "9rem",
+            borderRadius: "15px",
+            backgroundColor: "#7B61FF",
+            color: "white",
+          }}
         >
-          <div className="card-header">Task Pending Box</div>
-          <div className="card-body" id="profile-text">
-            <i
-              class="fa-solid fa-list-check"
+          <div className="card-body">
+            <h5 className="card-title">{TotalTask}</h5>
+            <p
+              className="card-text"
               style={{
                 color: "white",
-                paddingRight: "5%",
-                paddingTop: "1%",
+                fontWeight: "bold" 
               }}
-            ></i>
-            <h5 className="card-title" id="sub-title">
-              Pending
-            </h5>
-            <p className="card-text" id="number-display">
-              {TotalTask}
+            >
+              List Of task
             </p>
+            <a
+              href="#"
+              className="btn"
+              style={{
+                color: "white",
+                border: "2px solid white",
+                width: "30%", 
+                height: "30%" , 
+                fontSize: "90%",
+                paddingBottom: "5%"
+              }}
+              id="view"
+            >
+              View
+            </a>
           </div>
         </div>
+
       </div>
 
-      <div className="graph-section">
-        <div className="chart-container">
-          <div className="chart">
-            <div className="chart-area"></div>
+      <div
+        style={{ width: "100%", maxWidth: 600, height: 500 }}
+        className="task-graph"
+      >
+        <Chart
+          chartType="BarChart"
+          data={data}
+          options={options}
+          width={"100%"}
+          height={"100%"}
+        />
+      </div>
 
-            <div className="x-axis">
-              <div className="day-label">Sunday</div>
-              <div className="day-label">Monday</div>
-              <div className="day-label">Tuesday</div>
-              <div className="day-label">Wednesday</div>
-              <div className="day-label">Thursday</div>
-              <div className="day-label">Friday</div>
-              <div className="day-label">Saturday</div>
-            </div>
-          </div>
-          <div className="sunday"></div>
-          <div className="monday"></div>
-          <div className="tuesday"></div>
-          <div className="wednesday"></div>
-          <div className="thursday"></div>
-          <div className="friday"></div>
-          <div className="saturday"></div>
-        </div>
+      <div className="calender-section">
+        <Calendar />
       </div>
     </div>
   );
